@@ -1,0 +1,19 @@
+apiVersion: elbv2.k8s.aws/v1beta1
+kind: TargetGroupBinding
+metadata:
+  name: nginx
+spec:
+  serviceRef:
+    name: nginx
+    port: 80
+  networking:
+    ingress:
+    - from:
+      - securityGroup:
+          groupID: <securitygroupid>
+      ports:
+      - port: 80
+        protocol: TCP
+  multiClusterTargetGroup: true
+  targetGroupARN: <targetgrouparn>
+
