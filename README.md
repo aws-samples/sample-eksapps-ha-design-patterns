@@ -1,17 +1,10 @@
-## My Project
+# Design Patterns for building resilient applications across EKS Clusters
 
-TODO: Fill this README out!
+As organizations increasingly rely on Kubernetes—whether through Amazon Elastic Kubernetes Service (EKS) or self-managed clusters on AWS—to power and scale mission-critical applications, ensuring resilience and high availability is crucial. Running workloads on a single EKS cluster can be convenient, but achieving high availability during operations like cluster upgrades, add-on updates, or workflow changes can be challenging. These operations may impact workload resilience and application availability.
 
-Be sure to:
+This three-part series explores design patterns and strategies that bolster application resiliency through multi-cluster deployment on EKS.
 
-* Change the title in this README
-* Edit your repository description on GitHub
+- **Part 1**: [Multi-Cluster Load Balancing in Amazon EKS Using AWS Load Balancer Controller and NLB configuration](nlb_config_aws_lbc/README.md)
 
-## Security
-
-See [CONTRIBUTING](CONTRIBUTING.md#security-issue-notifications) for more information.
-
-## License
-
-This library is licensed under the MIT-0 License. See the LICENSE file.
-
+- **Part 2**: [Coming soon]
+- **Part 3**: [Coming soon]
